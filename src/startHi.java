@@ -8,13 +8,18 @@ public class startHi
     startHi("hello hi") → false */
 
     public boolean startHi() {
-        String str = "hi mister";
-        String forH = String.valueOf(str.charAt(0));
-        String forI = String.valueOf(str.charAt(1));
+        String str = "h";
+        if(str.length()>1) {
+            String forH = String.valueOf(str.charAt(0));
+            String forI = String.valueOf(str.charAt(1));
 
-        String checkForHi = forH + forI;
+            String checkForHi = forH + forI;
 
-        return checkForHi.equals("hi");
+            return checkForHi.equals("hi");
+        }
+        else {
+            return false;
+        }
 
     };
 
